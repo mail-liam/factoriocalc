@@ -31,6 +31,16 @@ recipes = {
         "craft_time": 6,
         "inputs": {"Copper Wire": 4, "Electronic Circuit": 2, "Plastic Bar": 2},
     },
+    "Engine Unit": {
+        "output": 1,
+        "craft_time": 10,
+        "inputs": {"Iron Gear": 1, "Pipe": 2, "Steel Plate": 1},
+    },
+    "Chemical Science": {
+        "output": 2,
+        "craft_time": 24,
+        "inputs": {"Advanced Circuit": 3, "Engine Unit": 2, "Sulfur": 1},
+    },
     "Electric Furnace": {
         "output": 1,
         "craft_time": 5,
@@ -85,10 +95,15 @@ recipes = {
 
 results = {}
 
-result = "Utility Science"
-output = 9
+sciences = [
+    "Automation Science",
+    # "Logistic Science",
+    "Chemical Science",
+    # "Utility Science",
+]
+output = 1
 
-CRAFT_SPEED = 1.25
+CRAFT_SPEED = 0.75
 PROD = 1
 
 
@@ -112,8 +127,10 @@ def calc_input_required(item, output_per_sec, prod=PROD, speed=CRAFT_SPEED):
 
 
 if __name__ == "__main__":
-    print(f"To make {output} {result} per second, you will need:")
-    calc_input_required(result, output)
-    print("\nTOTAL RAW:")
-    for item in results:
-        print(f"- {results[item]} {item}s per second")
+    for science in sciences:
+        print(f"To make {output} {science} per second, you will need:")
+        calc_input_required(science, output)
+        print("\nTOTAL RAW:")
+        for item in results:
+            print(f"- {results[item]} {item}s per second")
+        print("\n\n")
