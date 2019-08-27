@@ -42,3 +42,4 @@ if __name__ == "__main__":
         for item in results:
             print(f"- {results[item]} {item}s per second")
         print("\n\n")
+        results.clear()
