@@ -6,6 +6,7 @@ sciences = [
     "Automation Science",
     # "Logistic Science",
     "Chemical Science",
+    "Military Science",
     # "Production Science",
     # "Utility Science",
 ]

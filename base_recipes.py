@@ -26,6 +26,23 @@ recipes = {
         "craft_time": 6,
         "inputs": { "Transport Belt": 1, "Inserter": 1 },
     },
+    "Firearm Magazine": {"output": 1, "craft_time": 1, "inputs": {"Iron Plate": 4}},
+    "Piercing Rounds Magazine": {
+        "output": 1,
+        "craft_time": 3,
+        "inputs": {"Copper Plate": 5, "Steel Plate": 1, "Firearm Magazine": 1},
+    },
+    "Grenade": {
+        "output": 1,
+        "craft_time": 8,
+        "inputs": {"Coal": 10, "Iron Plate": 5},
+    },
+    "Wall": {"output": 1, "craft_time": 0.5, "inputs": {"Stone Brick": 5}},
+    "Military Science": {
+        "output": 2,
+        "craft_time": 10,
+        "inputs": {"Piercing Rounds Magazine": 1, "Grenade": 1, "Wall": 2},
+    },
     "Pipe": { "output": 1, "craft_time": 0.5, "inputs": { "Iron Plate": 1 } },
     "Advanced Circuit": {
         "output": 1,
