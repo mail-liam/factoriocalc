@@ -98,7 +98,7 @@ recipes = {
     "Low Density Structure": {
         "output": 1,
         "craft_time": 20,
-        "inputs": { "Copper Plate": 20, "Plastic Bar": 5, "Steel Plate": 2 },
+        "inputs": { "Glass": 10, "Copper Plate": 20, "Plastic Bar": 10, "Steel Plate": 5 },
     },
     "Processing Unit": {
         "output": 1,
