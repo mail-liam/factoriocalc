@@ -1,4 +1,4 @@
-from base_recipes import recipes
+from mod_space_recipes import recipes
 
 results = {}
 
@@ -6,8 +6,8 @@ sciences = [
     "Automation Science",
     # "Logistic Science",
     "Chemical Science",
-    "Military Science",
-    # "Production Science",
+    # "Military Science",
+    "Production Science",
     # "Utility Science",
 ]
 output = 1
