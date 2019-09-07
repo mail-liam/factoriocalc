@@ -24,6 +24,18 @@ mod_recipes = {
         "craft_time": 20,
         "inputs": { "Glass": 10, "Copper Plate": 20, "Plastic Bar": 10, "Steel Plate": 5 },
     },
+    "Rocket Science": {
+        "output": 3,
+        "craft_time": 20,
+        "machine": assembler,
+        "inputs": {
+            "Battery": 5,
+            "Processing Unit": 1,
+            "Heat Shielding": 1,
+            "Low Density Structure": 1,
+            "Liquid Rocket Fuel": 100,
+        },
+    },
 }
 
 recipes.update(mod_recipes)

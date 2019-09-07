@@ -1,6 +1,6 @@
 assembler = {
     "name": "Assembler",
-    "speed": 0.75,
+    "speed": 1.25,
 }
 
 electric_furnace = {
@@ -66,6 +66,12 @@ recipes = {
         "craft_time": 1,
         "machine": assembler,
         "inputs": {"Iron Plate": 4}
+    },
+    "Steel Plate": {
+        "output": 1,
+        "craft_time": 16,
+        "machine": electric_furnace,
+        "inputs": {"Iron Plate": 5},
     },
     "Piercing Rounds Magazine": {
         "output": 1,
@@ -150,6 +156,12 @@ recipes = {
         "craft_time": 21,
         "machine": assembler,
         "inputs": {"Electric Furnace": 1, "Productivity Module": 1, "Rail": 30},
+    },
+    "Battery": {
+        "output": 1,
+        "craft_time": 4,
+        "machine": chemical_plant,
+        "inputs": {"Iron Plate": 1, "Copper Plate": 1, "Sulfuric Acid": 20}
     },
     "Flying Robot Frame": {
         "output": 1,

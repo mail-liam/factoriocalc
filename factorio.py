@@ -2,13 +2,19 @@ from mod_space_recipes import recipes
 
 results = {}
 
-sciences = [
+items = [
     "Automation Science",
-    # "Logistic Science",
-    "Chemical Science",
+    "Logistic Science",
+    # "Chemical Science",
     # "Military Science",
-    "Production Science",
+    # "Production Science",
     # "Utility Science",
+    # "Advanced Circuit"
+]
+stops = [
+    "Steel Plate",
+    "Advanced Circuit",
+    # "Electronic Circuit",
 ]
 output = 1
 
@@ -16,7 +22,7 @@ PROD = 1
 
 
 def calc_input_required(item, output_per_sec, prod=PROD):
-    if item in recipes:
+    if item in recipes and item not in stops:
         recipe = recipes[item]
         speed = recipe["machine"]["speed"]
         craft_output = recipe["output"] * prod / (recipe["craft_time"] / speed)
@@ -36,11 +42,11 @@ def calc_input_required(item, output_per_sec, prod=PROD):
 
 
 if __name__ == "__main__":
-    for science in sciences:
-        print(f"To make {output} {science} per second, you will need:")
-        calc_input_required(science, output)
+    for item in items:
+        print(f"To make {output} {item} per second, you will need:")
+        calc_input_required(item, output)
         print("\nTOTAL RAW:")
-        for item in results:
-            print(f"- {results[item]} {item}s per second")
+        for base_item in results:
+            print(f"- {results[base_item]} {base_item}s per second")
         print("\n\n")
         results.clear()
