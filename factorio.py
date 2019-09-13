@@ -3,18 +3,22 @@ from mod_space_recipes import recipes
 results = {}
 
 items = [
-    "Automation Science",
-    "Logistic Science",
+    # "Automation Science",
+    # "Logistic Science",
     # "Chemical Science",
     # "Military Science",
     # "Production Science",
-    # "Utility Science",
+    "Utility Science",
+    "Rocket Science",
     # "Advanced Circuit"
 ]
 stops = [
     "Steel Plate",
     "Advanced Circuit",
-    # "Electronic Circuit",
+    "Electronic Circuit",
+    "Engine Unit",
+    "Battery",
+    "Glass",
 ]
 output = 1
 

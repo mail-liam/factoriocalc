@@ -4,7 +4,7 @@ assembler = {
 }
 
 electric_furnace = {
-    "name": "Electric Furnance",
+    "name": "Electric Furnace",
     "speed": 2,
 }
 
@@ -162,6 +162,12 @@ recipes = {
         "craft_time": 4,
         "machine": chemical_plant,
         "inputs": {"Iron Plate": 1, "Copper Plate": 1, "Sulfuric Acid": 20}
+    },
+    "Electric Engine Unit": {
+        "output": 1,
+        "craft_time": 10,
+        "machine": assembler,
+        "inputs": {"Electronic Circuit": 2, "Engine Unit": 1, "Lubricant": 15}
     },
     "Flying Robot Frame": {
         "output": 1,
